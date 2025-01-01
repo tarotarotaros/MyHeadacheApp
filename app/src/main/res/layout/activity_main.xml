@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 日付入力 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日付" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="タップして日付選択"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none" />
+
+        <!-- 時間入力 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="時間" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="タップして時間選択"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none" />
+
+
+        <!-- 痛い場所 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="痛い場所" />
+        <Spinner
+            android:id="@+id/spinnerLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 痛さ度合い -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="痛さ度合い" />
+        <Spinner
+            android:id="@+id/spinnerSeverity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 閃輝暗点の有無 -->
+        <CheckBox
+            android:id="@+id/checkBoxAura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="閃輝暗点あり" />
+
+        <!-- 薬の服用チェックボックス -->
+        <CheckBox
+            android:id="@+id/checkBoxTookMedicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薬を服用した" />
+
+        <!-- 薬名入力 (デフォルトは非活性にしておく) -->
+        <EditText
+            android:id="@+id/editTextMedicineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="薬名を入力"
+            android:enabled="false" />
+
+        <!-- 服用後の痛さ度合い -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服用後の痛さ度合い" />
+        <Spinner
+            android:id="@+id/spinnerAfterSeverity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 記録ボタン -->
+        <Button
+            android:id="@+id/buttonRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="記録"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
